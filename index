@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: verdana;
+            font-size: 20px;
+        }
+
+        abbr {
+            text-decoration: underline;
+        }
+        
+        .item1 {
+            border: 2px inset powderblue;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        #item {
+            border: 3px inset cyan;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Here is a quote from lorem website:</h1>
+
+    <blockquote cite="#">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis explicabo ex cupiditate asperiores hic inventore libero aspernatur impedit, ea, repellat doloribus consequatur corporis maiores necessitatibus id in recusandae nihil error vel laboriosam. Cum illo quasi, cupiditate pariatur, eius inventore alias doloribus deleniti molestias fuga quia commodi, consectetur illum impedit repudiandae!
+    </blockquote>
+
+    <p class="item1">
+        Browser usually insert quotation marks around the q element.
+    </p>
+
+    <p>
+        WWF´s goal is to: <q>Build a future where people live in harmony with nature.</q>
+    </p>
+
+    <p>
+        The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+    </p>
+
+    <address>
+        Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+    </address>
+
+    <!--This is a comment-->
+    <p>This is a paragraph</p>
+    <!--Comments are not displayed in the browser-->
+
+    <!-- Do not display this at the moment <img border="0" src="mountains.jpg" alt="mountains">
+    In this line, the comment still go on-->
+    <hr>
+    
+    <h2>The target Attribute</h2>
+
+    <a href="https://fredobienestar.com" target="-top">Visit me</a>
+    <hr>
+
+    <h2>Image as a link</h2>
+
+    <p>
+        The image below is a link. Try to click on it.
+    </p>
+
+    <a href="https://fredobienestar.com" target="-blank"><img src="mountains.jpg" id="item"></a>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction(f) {
+            return (100 * 10) - (f);
+        }
+        document.getElementById("demo").innerHTML = myFunction (10);
+    </script>
+</body>
+</html>
